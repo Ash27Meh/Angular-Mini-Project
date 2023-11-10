@@ -1,0 +1,22 @@
+<!-- <p>login works!</p> -->
+<div class="h-screen bg-gradient-to-t from-indigo-700 to-lime-400 w-full flex">
+    <form class="h-60 w-68 bg-teal-400 bg-opacity-25 mx-auto mt-44">
+        <div class="text-center text-violet-800 text-xl font-bold underline mt-3">
+            <h3>LOGIN</h3>
+        </div>
+        <div>
+            <label for="Username" class="underline text-purple-800 mx-3 mt-2">Username: </label><br>
+            <input type="text" placeholder="Enter Your Username" class="w-64 mx-3 mt-2 rounded"[(ngModel)]="username" name="username">
+        </div>
+        <div>
+            <label for="Password" class="underline text-purple-800 mx-3 mt-2">Password: </label><br>
+            <input type="password" placeholder="Enter Your Password" class="w-64 mx-3 mt-2 rounded" [(ngModel)]="password" name="password">
+        </div>
+        <div class="flex">
+            <button class="h-fit w-64 bg-pink-100 text-indigo-400 rounded mx-auto mt-3" (click)="login()">LOGIN</button>
+        </div>
+        <div class="flex">
+            <a href="#" routerLink="/signup" class="mx-auto mt-3 text-violet-700">SignUp</a> 
+        </div>
+    </form>
+</div>
